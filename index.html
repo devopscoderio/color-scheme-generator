@@ -3,7 +3,15 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1>index.html</h1>
+      <form>
+        <label for="input-color">Color Picker</label>
+        <input type="color" name="input-color">
+        <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars">
+          <option value="" selected disabled hidden>Color Options</option>
+        </select>
+        <button type="submit">Get Color Scheme</button>
+      </form>
         <script src="index.js"></script>
     </body>
 </html>
