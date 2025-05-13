@@ -56,3 +56,20 @@ This is a simple web application that allows users to generate color schemes bas
 | Responsive design for mobile layout                                   | ☐ Not done |
 | Error handling for failed API requests                                | ☐ Not done |
 
+
+```js
+colorPick.addEventListener('change', () => {})
+```
+
+Originally i had an event listener on `input`. The issue with this was each color selected would trigger an API call. In a production scenario, third party or open source rate limitation would be invoked or alternitvely a drain of resources and API calls.
+
+![inputEventListener](./.documentation/imgs/inputEventListener.gif)
+
+
+
+```js
+colorPick.addEventListener('input', () => {})
+```
+
+![Change](/.documentation/imgs/changeEventListener.gif)
+
