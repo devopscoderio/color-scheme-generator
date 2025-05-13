@@ -12,13 +12,14 @@ let template = ""
     for(let color of data.colors){
       console.log(color.hex)
 
-      document.getElementById('colors').innerHTML += `
+      template += `
       <div>
       <img src=${color.image.bare}>
         ${color.hex.value}
       <div>
       `
     }
+    document.getElementById('colors').innerHTML = template
   })
 })
 
@@ -29,5 +30,11 @@ form.addEventListener('submit', function(e) {
   e.preventDefault()
 console.log(document.getElementById('colorScheme').value)
 console.log(colorPick.value)
+
+// post scheme and color
+
 })
+
+
+
 
