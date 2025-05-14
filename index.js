@@ -54,10 +54,10 @@ const renderColor = function(data){
       console.log(color.hex)
 
       template += `
-      <div>
+      <div class="color-box">
       <img src=${color.image.bare}>
-        ${color.hex.value}
-      <div>
+        <p>${color.hex.value}</p>
+      </div>
       `
     }
     document.getElementById('colors').innerHTML = template
